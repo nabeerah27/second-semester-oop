@@ -18,4 +18,8 @@ public class Point3D extends Point2D {
     // Setter method to update z-coordinate
     public void setZ(int z) { this.z = z; }
 
+    public String toString() {
+        return "Point ( " + getX() + ", " + getY() + ", " + getZ() + ")";
+    }
+
 }
