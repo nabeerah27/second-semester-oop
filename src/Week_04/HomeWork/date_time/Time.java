@@ -1,5 +1,7 @@
 package Week_04.HomeWork.date_time;
 
+import Week_04.HomeWork.date_time.utils.TimeUtils;
+
 public class Time {
 
     private int hours;
@@ -18,18 +20,18 @@ public class Time {
 
     // Setters for hours, minutes and seconds (separately)
     public void setHrs(int hours) {
-        if (Utils.isValidHour(hours))
+        if (TimeUtils.isValidHour(hours))
         {
             this.hours = hours;
         }
         else
         {
-            Utils.printInvalid("hours");
+            TimeUtils.printInvalid("hours");
         }
     }
 
     public void setMins(int minutes) {
-        if(Utils.isValidMinuteOrSecond(minutes))
+        if(TimeUtils.isValidMinuteOrSecond(minutes))
         {
             this.minutes = minutes;
         }
@@ -40,7 +42,7 @@ public class Time {
     }
 
     public void setSec(int seconds) {
-        if (Utils.isValidMinuteOrSecond(seconds))
+        if (TimeUtils.isValidMinuteOrSecond(seconds))
         {
             this.seconds = seconds;
         }
@@ -51,8 +53,8 @@ public class Time {
     }
 
     public void setTime(int hours, int minutes, int seconds) {
-        if (Utils.isValidHour(hours) && Utils.isValidMinuteOrSecond(minutes) &&
-            Utils.isValidMinuteOrSecond(seconds))
+        if (TimeUtils.isValidHour(hours) && TimeUtils.isValidMinuteOrSecond(minutes) &&
+            TimeUtils.isValidMinuteOrSecond(seconds))
         {
             this.hours = hours;
             this.minutes = minutes;
@@ -60,7 +62,7 @@ public class Time {
         }
         else
         {
-            Utils.printInvalid("Invalid");
+            TimeUtils.printInvalid("Invalid");
         }
     }
 
