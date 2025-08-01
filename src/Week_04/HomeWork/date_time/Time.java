@@ -15,11 +15,13 @@ public class Time {
 
     // Parameterized constructor
     public Time(int hours, int minutes, int seconds) {
-        int totalSeconds = (hours * 3600) + (minutes * 60) + seconds;
+        // Start from zero to avoid double counting
+        this.hours = 0;
+        this.minutes = 0;
+        this.seconds = 0;
 
-        this.hours = (totalSeconds / 3600) % 24;    // Normalize hours (24-hour format)
-        this.minutes = (totalSeconds % 3600) / 60;  // Extract remaining minutes
-        this.seconds = totalSeconds % 60;           // Extract remaining seconds
+        // Reuse addSeconds for normalization
+        addSeconds((hours * 3600) + (minutes * 60) + seconds);
     }
 
     // Getter for hours, minutes and seconds
@@ -44,14 +46,11 @@ public class Time {
 
     // Add seconds in current seconds
     public void addSeconds(int seconds) {
-        int newSec = seconds + this.seconds;
-        int extraMinutes = newSec / 60;
-        this.seconds = newSec % 60;
+        int totalSeconds = (this.hours * 3600) + (this.minutes * 60) + this.seconds + seconds;
 
-        if(extraMinutes > 0)
-        {
-            addMinutes(extraMinutes);
-        }
+        this.hours = (totalSeconds / 3600) % 24;
+        this.minutes = (totalSeconds % 3600) / 60;
+        this.seconds = totalSeconds % 60;
     }
 
     // Add minutes in current minutes
