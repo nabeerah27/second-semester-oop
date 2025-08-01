@@ -2,7 +2,7 @@ package Week_04.HomeWork;
 
 import Week_04.HomeWork.date_time.Time;
 
-public class Main {
+public class TestTime {
 
     public static void main(String[] args) {
 
