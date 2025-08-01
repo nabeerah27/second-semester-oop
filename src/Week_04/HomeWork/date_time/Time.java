@@ -42,6 +42,7 @@ public class Time {
         }
     }
 
+    // Add seconds in current seconds
     public void addSeconds(int seconds) {
         int newSec = seconds + this.seconds;
         int extraMinutes = newSec / 60;
@@ -53,21 +54,17 @@ public class Time {
         }
     }
 
+    // Add minutes in current minutes
     public void addMinutes(int minutes) {
-        int newMins = minutes + this.minutes;
-        int extraHours = newMins / 60;
-        this.minutes = newMins % 60;
-
-        if(extraHours > 0)
-        {
-            addHours(extraHours);
-        }
+        addSeconds(minutes * 60);
     }
 
+    // Add hours in current hours
     public void addHours(int hours) {
-        this.hours = (this.hours + hours) % 24;
+        addSeconds(hours * 3600);
     }
 
+    // Returns a formatted string representation of the time e.g., "00:00:00"
     @Override
     public String toString() {
         return String.format("Time is: %02d:%02d:%02d", hours, minutes, seconds);
