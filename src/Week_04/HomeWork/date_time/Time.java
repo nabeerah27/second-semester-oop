@@ -8,6 +8,11 @@ public class Time {
     private int minutes;
     private int seconds;
 
+    // Null constructor to set default values of attributes
+    public Time() {
+        setTime(0, 0, 0);
+    }
+
     // Parameterized constructor
     public Time(int hours, int minutes, int seconds) {
         setTime(hours, minutes, seconds);
