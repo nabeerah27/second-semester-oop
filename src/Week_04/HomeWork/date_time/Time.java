@@ -66,7 +66,7 @@ public class Time {
     // Returns a formatted string representation of the time e.g., "00:00:00"
     @Override
     public String toString() {
-        return String.format("Time is: %02d:%02d:%02d", hours, minutes, seconds);
+        return String.format("%02d:%02d:%02d", hours, minutes, seconds);
     }
 
 
