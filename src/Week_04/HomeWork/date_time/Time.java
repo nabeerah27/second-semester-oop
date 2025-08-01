@@ -15,7 +15,11 @@ public class Time {
 
     // Parameterized constructor
     public Time(int hours, int minutes, int seconds) {
-        setTime(hours, minutes, seconds);
+        int totalSeconds = (hours * 3600) + (minutes * 60) + seconds;
+
+        this.hours = (totalSeconds / 3600) % 24;    // Normalize hours (24-hour format)
+        this.minutes = (totalSeconds % 3600) / 60;  // Extract remaining minutes
+        this.seconds = totalSeconds % 60;           // Extract remaining seconds
     }
 
     // Getter for hours, minutes and seconds
