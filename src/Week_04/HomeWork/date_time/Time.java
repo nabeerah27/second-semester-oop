@@ -23,40 +23,7 @@ public class Time {
     public int getMins() { return minutes; }
     public int getSec() { return seconds; }
 
-    // Setters for hours, minutes and seconds (separately)
-    public void setHrs(int hours) {
-        if (TimeUtils.isValidHour(hours))
-        {
-            this.hours = hours;
-        }
-        else
-        {
-            TimeUtils.printInvalid("hours");
-        }
-    }
-
-    public void setMins(int minutes) {
-        if(TimeUtils.isValidMinuteOrSecond(minutes))
-        {
-            this.minutes = minutes;
-        }
-        else
-        {
-            System.out.println("minutes");
-        }
-    }
-
-    public void setSec(int seconds) {
-        if (TimeUtils.isValidMinuteOrSecond(seconds))
-        {
-            this.seconds = seconds;
-        }
-        else
-        {
-            System.out.println("seconds");
-        }
-    }
-
+    // Setter to set time
     public void setTime(int hours, int minutes, int seconds) {
         if (TimeUtils.isValidHour(hours) && TimeUtils.isValidMinuteOrSecond(minutes) &&
             TimeUtils.isValidMinuteOrSecond(seconds))
