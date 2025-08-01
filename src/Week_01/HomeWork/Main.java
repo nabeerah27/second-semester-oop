@@ -12,6 +12,11 @@ public class Main {
         MobilePhone mobile = new MobilePhone("Xiaomi", 47000);
         mobile.showSpecs();
 
+        System.out.println("-------------------------------");
+
+        String[] features = {"Air conditioning", "LED", "Lights", "Air bags", "Parking sensors"};
+        Vehicle myCar = new Vehicle("Brown", "BMW", 2022, features);
+        myCar.printDetails();
 
     }
 
