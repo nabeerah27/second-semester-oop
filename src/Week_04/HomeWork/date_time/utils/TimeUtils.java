@@ -1,6 +1,6 @@
-package Week_04.HomeWork.date_time;
+package Week_04.HomeWork.date_time.utils;
 
-public class Utils {
+public class TimeUtils {
 
     // Validates hours (0-23)
     public static boolean isValidHour(int hour) {
