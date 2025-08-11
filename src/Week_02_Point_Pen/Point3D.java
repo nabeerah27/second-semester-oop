@@ -1,4 +1,4 @@
-package Week_02_Point_Pen.ClassCode;
+package Week_02_Point_Pen;
 
 // Represents a point in 3D space by extending the 2D point (Point2D)
 public class Point3D extends Point2D {

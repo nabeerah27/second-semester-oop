@@ -1,4 +1,4 @@
-package Week_02_Point_Pen.ClassCode;
+package Week_02_Point_Pen;
 
 // Represents a point in 2D space with x and y coordinates
 public class Point2D {

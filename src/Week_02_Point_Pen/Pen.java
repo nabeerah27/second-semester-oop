@@ -1,4 +1,4 @@
-package Week_02_Point_Pen.ClassCode;
+package Week_02_Point_Pen;
 
 public class Pen {
 
