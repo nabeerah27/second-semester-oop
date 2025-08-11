@@ -1,13 +1,13 @@
-package Week_03.HomeWork;
+package Week_03_Geometry;
 
-import Week_03.ClassCode.Point;
+import Week_02_Point_Pen.Point2D;
 
 public class DistanceCalculator {
 
-    private Point p1;
-    private Point p2;
+    private Point2D p1;
+    private Point2D p2;
 
-    public DistanceCalculator(Point p1, Point p2) {
+    public DistanceCalculator(Point2D p1, Point2D p2) {
         this.p1 = p1;
         this.p2 = p2;
     }

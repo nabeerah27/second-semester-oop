@@ -1,13 +1,13 @@
-package Week_03.HomeWork;
+package Week_03_Geometry;
 
-import Week_03.ClassCode.Point;
+import Week_02_Point_Pen.Point2D;
 
 public class QuadrantFinder {
 
     // Point object to check its quadrant
-    private Point p;
+    private Point2D p;
 
-    public QuadrantFinder(Point p) {
+    public QuadrantFinder(Point2D p) {
         this.p = p;
     }
 
