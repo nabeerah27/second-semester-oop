@@ -4,33 +4,33 @@ package Week_02_Point_Pen;
 public class Point2D {
 
     // Private fields to store the x and y coordinates
-    private int x;
-    private int y;
+    private double x;
+    private double y;
 
     // Parameterized constructor to initialize the point with given x and y values
-    public Point2D(int x, int y) {
+    public Point2D(double x, double y) {
         this.x = x;
         this.y = y;
     }
 
     // Getters to access x and y coordinates
-    public int getX() {
+    public double getX() {
         return x;
     }
-    public int getY() {
+    public double getY() {
         return y;
     }
 
     // Setters to update x and y coordinates
-    public void setX(int x) {
+    public void setX(double x) {
         this.x = x;
     }
-    public void setY(int y) {
+    public void setY(double y) {
         this.y = y;
     }
 
     public String toString() {
-        return "Point (" + getX() + "," + getY() + ")";
+        return "(" + getX() + "," + getY() + ")";
     }
 
 }
