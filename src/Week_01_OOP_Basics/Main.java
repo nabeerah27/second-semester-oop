@@ -1,8 +1,13 @@
-package Week_01.HomeWork;
+package Week_01_OOP_Basics;
 
 public class Main {
 
     public static void main(String[] args) {
+
+        Student s = new Student("Nabeerah Yaqoot", 20, 11);
+        s.printInfo();
+
+        System.out.println("-------------------------------");
 
         Movie movie = new Movie("Interstellar", "Science Fiction");
         movie.getMovieInfo();
