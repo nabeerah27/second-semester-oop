@@ -5,23 +5,25 @@ import Week_04.LabTask.intermediate_classes.BunnyRabbits;
 // BankManager class is a derived class (child) of BunnyRabbits
 public class BankManager extends BunnyRabbits {
 
+    private String job;
+
     // Constructor - calls the parent (BunnyRabbits) constructor
     // Sets a fixed color (White) and action (Manage accounts)
 
     public BankManager(String size) {
-        super(size, "White", "Manage accounts");
+        super(size, "White");
+        this.job = "Manage accounts";
     }
 
     // Overriding the getRole method to specify this bunny's role
-    @Override
-    public String getRole() {
-        return "Bank Manager";
+    public String getJob() {
+        return job;
     }
 
     // Overriding toString() to include role and parent class details
     @Override
     public String toString() {
-        return "Role : " + getRole() + " \n" + super.toString();
+        return "🏦 Bank manager [Size = " + getSize() + ", Color = " + getColor() + ", Job = " + job + "]";
     }
 
 }

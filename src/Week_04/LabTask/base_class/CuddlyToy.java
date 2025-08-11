@@ -5,29 +5,10 @@ public class CuddlyToy {
 
     // Private attributes common to all cuddly toys
     private String size;
-    private String color;
-    private String job;
 
-    // Parameterized Constructor - initializes all attributes
-    public CuddlyToy(String size, String color, String job) {
+    // Parameterized Constructor
+    public CuddlyToy(String size) {
         this.size = size;
-        this.color = color;
-        this.job = job;
-    }
-
-    // Getter for color
-    public String getColor() {
-        return color ;
-    }
-
-    // Getter for job
-    public String getJob() {
-        return job;
-    }
-
-    // Method to get role - intended to be overridden by child classes
-    public String getRole() {
-        return "";
     }
 
     // Getter for size
@@ -42,15 +23,18 @@ public class CuddlyToy {
 
     // Generic noise method - can be overridden in derived classes for specific sounds
     public void makeNoise() {
-        System.out.println("Make noise! ");
+
+    }
+
+    // Method to describe the attributes of an object
+    public void describe() {
+        System.out.println("My size is " + size);
     }
 
     // Overridden toString() method to display toy's details
     @Override
     public String toString() {
-        return "\nSize: " + size +
-                "\nColor: " + color +
-                "\nJob: " + job;
+        return "🧩 Cuddly Toy [Size = " + size + "]";
     }
 
 }
