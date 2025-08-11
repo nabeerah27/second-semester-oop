@@ -1,13 +1,13 @@
-package Week_03.HomeWork;
+package Week_03_Geometry;
 
-import Week_03.ClassCode.Point;
+import Week_02_Point_Pen.Point2D;
 
 public class Main {
 
     public static void main(String[] args) {
 
-        Point p1 = new Point(8, -2);
-        Point p2 = new Point(-1, 8);
+        Point2D p1 = new Point2D (8, -2);
+        Point2D p2 = new Point2D (-1, 8);
 
         SlopeCalculator slope = new SlopeCalculator(p1, p2);
         System.out.println(slope);
