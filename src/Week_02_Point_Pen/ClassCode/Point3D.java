@@ -1,4 +1,4 @@
-package Week_02.ClassCode;
+package Week_02_Point_Pen.ClassCode;
 
 // Represents a point in 3D space by extending the 2D point (Point2D)
 public class Point3D extends Point2D {
@@ -13,13 +13,17 @@ public class Point3D extends Point2D {
     }
 
     // Getter method to access z-coordinate
-    public int getZ() { return z; }
+    public int getZ() {
+        return z;
+    }
 
     // Setter method to update z-coordinate
-    public void setZ(int z) { this.z = z; }
+    public void setZ(int z) {
+        this.z = z;
+    }
 
     public String toString() {
-        return "Point ( " + getX() + ", " + getY() + ", " + getZ() + ")";
+        return "Point (" + getX() + "," + getY() + "," + getZ() + ")";
     }
 
 }
