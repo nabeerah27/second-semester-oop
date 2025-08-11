@@ -1,4 +1,4 @@
-package Week_01.HomeWork;
+package Week_01_OOP_Basics;
 
 public class MobilePhone {
 

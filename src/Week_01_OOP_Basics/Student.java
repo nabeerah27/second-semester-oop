@@ -1,4 +1,4 @@
-package Week_01.ClassCode;
+package Week_01_OOP_Basics;
 
 public class Student {
 
