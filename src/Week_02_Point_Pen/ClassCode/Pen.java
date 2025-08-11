@@ -1,4 +1,4 @@
-package Week_02.ClassCode;
+package Week_02_Point_Pen.ClassCode;
 
 public class Pen {
 
@@ -39,7 +39,7 @@ public class Pen {
 
     @Override
     public String toString() {
-        return "Position: Up(" + position.getX() + ", " + position.getY() + ")" +
+        return "Position at " + position +
                 "\nColor: " + color +
                 "\nSize: " + size +
                 "\nType: " + type +
