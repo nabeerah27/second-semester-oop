@@ -1,4 +1,4 @@
-package Week_04.ClassCode;
+package Week_04_Inheritance;
 
 public class Point {
 
