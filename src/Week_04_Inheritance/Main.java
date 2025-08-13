@@ -1,7 +1,8 @@
-package Week_04.ClassCode;
+package Week_04_Inheritance;
 
 public class Main {
 
+    // Main method provided by the teacher in the class
     public static void main(String[] args) {
 
         Point P = new Point(1, 2);
